@@ -1,0 +1,56 @@
+.skills {
+    background-color: $secondary;
+    color: white;
+    .myskills {
+        padding-top: 80px;
+        padding-bottom: 80px;
+            .section-title {
+                font-size: $font-l;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+            }
+    }
+    .skills-main {
+        float: left;
+        width: 33.33333%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .skills-icon {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        border: 1px solid $primary;
+        background-color: $primary;
+        padding: 10px;
+        border-radius: 100%;
+        margin: 0 auto;
+    }
+    .skills-title {
+        text-align: center;
+        font-size: $font-s;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .skills-text {
+        width: 180px;
+        margin: 0 auto;
+        text-align: left;
+        li {
+            padding-bottom: 8px;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+    }
+    @media (max-width: 767px) {
+        .skills-main {
+            float: none;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        } 
+    }
+}

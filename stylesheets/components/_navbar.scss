@@ -1,0 +1,67 @@
+.navbar-range {
+    .nav {
+        padding: 20px 30px 20px 30px;
+        height: 60px;
+        text-transform: uppercase;
+        background-color: rgba(232, 232, 232, 0.9);
+        font-weight: bold;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        a {
+            color: $primary;
+        }
+    }
+    .home {
+        float: left;
+        font-size: $font-s;
+    }
+    .menu {
+        float: right;
+        .active {
+            border-bottom: 3px solid $primary;
+        }
+    }
+    .menu li {
+        display: inline;
+        margin-left: 5rem;
+        font-size: $font-s;
+    }
+    .showmenu {
+        display: none;
+    }
+
+    @media (max-width: 1044px) {
+        .menu li {
+            margin-left: 3rem;
+        }
+    }
+    @media (max-width: 767px) {
+        .menu {
+            float: none;
+            background-color: rgba(232, 232, 232, 0.7);
+            max-height: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            transition: max-height 0.5s;
+        }
+        .menu li {
+            display: block;
+            margin: 0;
+            padding: 20px 30px 20px 30px;
+        }
+        .showmenu {
+            display: block;
+            float: right;
+
+        }
+        .menu-show .menu {
+            max-height: 240px;
+        }
+    }
+}

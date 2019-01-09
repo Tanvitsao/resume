@@ -1,0 +1,52 @@
+.profile {
+    .about {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        .section-title {
+            font-size: $font-l;
+            color: $primary;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+        }
+        .about-text {
+            float: left;
+            width: 60%;
+            color: $primary;
+            padding-left: 30px;
+            line-height: 35px;
+        }
+    }
+    .content {
+        padding-top: 30px;
+    }
+    .myphoto {
+        float: left;
+        width: 40%;
+        background-image: url('../../images/myphoto2.jpg');
+        background-size: cover;
+        background-position: center center;
+        height: 331px;
+    }
+
+    @media (max-width: 767px) {
+        .myphoto {
+            float: none;
+            width: 50%;
+            margin: 0 auto;
+            height: 200px;
+        }
+        .about {
+            .about-text {
+                float: left;
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    }
+    @media (max-width: 414px) {
+        .myphoto {
+            width: 100%;
+        }
+    }
+}

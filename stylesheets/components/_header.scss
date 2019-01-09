@@ -1,0 +1,127 @@
+.header {
+    background-image: url('../../images/resume_profile.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    .page-down {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 9;
+        animation: moveUpDown 0.5s infinite alternate;
+        .icon-color {
+            color: white; 
+        }
+    }
+    @keyframes moveUpDown {
+        from { bottom: 5%; }
+        to { bottom: 7%; }
+    }
+
+    .header-bg {
+        background-color: rgba(152, 180, 237, 0.7);
+        // background-color: rgba(152, 152, 237, 0.6);
+        // background-color: rgba(232, 232, 232, 0.7);
+        // background-color: rgba(82, 101, 143, 0.8);
+        height: 100vh;
+    }
+    @media (min-width: 768px) {
+        .header-bg-2 {
+            background-color: rgba(49, 56, 84, 0.9);
+            transform: skewX(-10deg); // x軸傾斜10度
+            max-width: 46rem;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: -12rem;
+        }
+    }
+    .header-title {
+        position: relative;
+        z-index: 10; // 需搭配 position 才有作用
+        color: #fff;
+        text-align: center;
+        max-width: 33rem;
+        padding-top: 40vh;
+    }
+    .title {
+        font-size: $font-xxl;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    .icon-section {
+        position: absolute;
+        bottom: 30px;
+        right: 40px;
+    }
+    .icon {     
+        text-align: center;
+        background-color: $primary;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 100%;
+        .icon-color {
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            
+        }
+    }
+    .icon:hover {
+        background-color: $fresh;
+        .icon-color {
+            color: $primary;
+        }
+    }
+
+    @media (max-width: 1044px) {
+        .header-bg-2 {
+            left: -20rem;
+        }
+        .header-title {
+            max-width: 26rem;
+        }
+    }
+    @media (max-width: 767px) {
+        background-image: url('../../images/resume_profile-2.jpg');
+        .header-title {
+            position: absolute;
+            top: 30%;
+            right: 0;
+            left: 0;
+            max-width: 767px;
+            background-color: rgba(49, 56, 84, 0.7);
+            padding: 30px;
+
+        }
+        .icon-section {
+            text-align: center;
+            left: 0;
+            right: 0;
+            bottom: 12%;
+        }
+        a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .icon {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 100%;
+        }
+        .title {
+            font-size: $font-xl;
+        }
+    }
+    @media (max-width: 320px) {
+        .title {
+            font-size: $font-l;
+        }
+    }
+}

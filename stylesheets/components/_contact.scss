@@ -1,0 +1,60 @@
+.contact {
+    background-color: $primary;
+    color: #fff;
+    .contact-me {
+        padding-top: 80px;
+        padding-bottom: 80px;
+            .section-title {
+                font-size: $font-l;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+            }
+    }
+    .myphoto {
+        width: 220px;
+        height: 220px;
+        display: block;
+        margin: 20px auto 20px auto;
+        border-radius: 100%;
+    }
+    .name {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .tw-name {
+        font-size: $font-m;
+        margin-right: 10px;
+    }
+    .en-name {
+        font-size: $font-s;
+    }
+    .information {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .info {
+        margin-bottom: 10px;
+        float: left;
+        width: 33.33333%;
+        .info-icon {
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            color: $primary;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 100%;
+            margin-right: 5px;
+        }
+    }
+    @media (max-width: 1200px) {
+        .info {
+            float: none;
+            width: 195px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
