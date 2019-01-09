@@ -11,12 +11,6 @@
                 padding: 20px;
             }
     }
-    .skills-main {
-        float: left;
-        width: 33.33333%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
     .skills-icon {
         width: 100px;
         height: 100px;
@@ -28,29 +22,149 @@
         border-radius: 100%;
         margin: 0 auto;
     }
-    .skills-title {
+    .skills-fe, .skills-lang {
+        margin-top: 30px;
+    }
+    .skills-left {
+        float: left;
+        width: 50%;
         text-align: center;
+        padding: 25px;
+    }
+    .skills-right {
+        float: left;
+        width: 50%;
+    }
+    @media (min-width: 768px) {
+        .language {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+    .skills-title {
         font-size: $font-s;
         margin-top: 20px;
-        margin-bottom: 20px;
     }
     .skills-text {
-        width: 180px;
-        margin: 0 auto;
-        text-align: left;
-        li {
-            padding-bottom: 8px;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    
+    .bar-container { 
+        width: 90%; 
+        margin: 20px auto; 
+    }
+    .bar-text {
+        width: 20%;
+        display: inline-block;
+    }
+    .bar {
+        width: 70%;
+        display: inline-block;
+        position: relative;
+    }
+    .bar-unfill { 
+        height: 15px;
+        display: block;
+        background: #fff;
+        width: 100%; 
+        border-radius: 8px;
+    }
+    .bar-fill { 
+        height: 15px; 
+        display: block; 
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    .html { 
+        background: #45c9a5; 
+        width: 80%; 
+    }
+    .css { 
+        background: #45c9a5; 
+        width: 90%; 
+    }
+    .bootstrap {
+        background: #45c9a5; 
+        width: 85%; 
+    }
+    .sass { 
+        background: #45c9a5; 
+        width: 70%; 
+    }
+    .js { 
+        background: #45c9a5; 
+        width: 60%; 
+    }
+    .vue { 
+        background: #45c9a5; 
+        width: 55%; 
+    }
+    .chinese { 
+        background: #45c9a5; 
+        width: 100%; 
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .english { 
+        background: #45c9a5; 
+        width: 60%; 
+    }
+    .japanese { 
+        background: #45c9a5; 
+        width: 80%; 
+    }
+    .small-cn {
+        font-size: 10px;
+        position: absolute;
+        top: 18px;
+        right: 0;
+    }
+    .small-en {
+        font-size: 10px;
+        position: absolute;
+        top: 18px;
+        right: 32%;
+    }
+    .small-jp {
+        font-size: 10px;
+        position: absolute;
+        top: 18px;
+        right: 15%;
+    }
+    @media (max-width: 1044px) {
+        .bar-text {
+            width: 30%;
         }
-        .icon {
-            margin-right: 8px;
+        .bar {
+            width: 60%;
         }
     }
     @media (max-width: 767px) {
-        .skills-main {
+        .skills-left {
             float: none;
             width: 100%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        } 
+            text-align: center;
+            padding: 25px;
+        }
+        .skills-right {
+            float: none;
+            width: 100%;
+        }
+        .bar-text {
+            width: 20%;
+        }
+        .bar {
+            width: 70%;
+        }
+    }
+    @media (max-width: 414px) {
+        .bar-text {
+            width: 30%;
+        }
+        .bar {
+            width: 60%;
+        }
     }
 }

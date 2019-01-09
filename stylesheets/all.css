@@ -396,13 +396,6 @@ a {
   padding: 20px;
 }
 
-.skills .skills-main {
-  float: left;
-  width: 33.33333%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .skills .skills-icon {
   width: 100px;
   height: 100px;
@@ -415,33 +408,172 @@ a {
   margin: 0 auto;
 }
 
-.skills .skills-title {
+.skills .skills-fe, .skills .skills-lang {
+  margin-top: 30px;
+}
+
+.skills .skills-left {
+  float: left;
+  width: 50%;
   text-align: center;
+  padding: 25px;
+}
+
+.skills .skills-right {
+  float: left;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .skills .language {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.skills .skills-title {
   font-size: 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .skills .skills-text {
-  width: 180px;
-  margin: 0 auto;
-  text-align: left;
+  text-align: center;
+  margin: 20px auto;
 }
 
-.skills .skills-text li {
-  padding-bottom: 8px;
+.skills .bar-container {
+  width: 90%;
+  margin: 20px auto;
 }
 
-.skills .skills-text .icon {
-  margin-right: 8px;
+.skills .bar-text {
+  width: 20%;
+  display: inline-block;
+}
+
+.skills .bar {
+  width: 70%;
+  display: inline-block;
+  position: relative;
+}
+
+.skills .bar-unfill {
+  height: 15px;
+  display: block;
+  background: #fff;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.skills .bar-fill {
+  height: 15px;
+  display: block;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.skills .html {
+  background: #45c9a5;
+  width: 80%;
+}
+
+.skills .css {
+  background: #45c9a5;
+  width: 90%;
+}
+
+.skills .bootstrap {
+  background: #45c9a5;
+  width: 85%;
+}
+
+.skills .sass {
+  background: #45c9a5;
+  width: 70%;
+}
+
+.skills .js {
+  background: #45c9a5;
+  width: 60%;
+}
+
+.skills .vue {
+  background: #45c9a5;
+  width: 55%;
+}
+
+.skills .chinese {
+  background: #45c9a5;
+  width: 100%;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.skills .english {
+  background: #45c9a5;
+  width: 60%;
+}
+
+.skills .japanese {
+  background: #45c9a5;
+  width: 80%;
+}
+
+.skills .small-cn {
+  font-size: 10px;
+  position: absolute;
+  top: 18px;
+  right: 0;
+}
+
+.skills .small-en {
+  font-size: 10px;
+  position: absolute;
+  top: 18px;
+  right: 32%;
+}
+
+.skills .small-jp {
+  font-size: 10px;
+  position: absolute;
+  top: 18px;
+  right: 15%;
+}
+
+@media (max-width: 1044px) {
+  .skills .bar-text {
+    width: 30%;
+  }
+  .skills .bar {
+    width: 60%;
+  }
 }
 
 @media (max-width: 767px) {
-  .skills .skills-main {
+  .skills .skills-left {
     float: none;
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    text-align: center;
+    padding: 25px;
+  }
+  .skills .skills-right {
+    float: none;
+    width: 100%;
+  }
+  .skills .bar-text {
+    width: 20%;
+  }
+  .skills .bar {
+    width: 70%;
+  }
+}
+
+@media (max-width: 414px) {
+  .skills .bar-text {
+    width: 30%;
+  }
+  .skills .bar {
+    width: 60%;
   }
 }
 
