@@ -288,7 +288,7 @@ a {
 
 @media (max-width: 767px) {
   .header {
-    background-image: url("../../images/resume_profile-2.jpg");
+    background-image: url("../images/resume_profile-2.jpg");
   }
   .header .header-title {
     position: absolute;
