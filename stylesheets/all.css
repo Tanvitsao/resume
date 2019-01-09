@@ -173,7 +173,7 @@ a {
 }
 
 .header {
-  background-image: url("../../images/resume_profile.jpg");
+  background-image: url("../images/resume_profile.jpg");
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -353,7 +353,7 @@ a {
 .profile .myphoto {
   float: left;
   width: 40%;
-  background-image: url("../../images/myphoto2.jpg");
+  background-image: url("../images/myphoto2.jpg");
   background-size: cover;
   background-position: center center;
   height: 331px;
